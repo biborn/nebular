@@ -165,6 +165,33 @@ $theme: (
   color-basic-active: color-basic-600,
   color-basic-disabled: color-basic-200,
 
+  /* SHOULD WE REFERENCE BASIC COLORS HERE? */
+  background-primary-color-0: white,
+  background-primary-color-1: white,
+  background-primary-color-2: color-basic-100,
+  background-primary-color-3: color-basic-200,
+  background-primary-color-4: color-basic-300,
+  background-primary-color-5: color-basic-400,
+
+  border-primary-color-0: color-basic-100,
+  border-primary-color-1: color-basic-100,
+  border-primary-color-2: color-basic-200,
+  border-primary-color-3: color-basic-300,
+  border-primary-color-4: color-basic-400,
+  border-primary-color-5: color-basic-500,
+
+  //background-secondary-color-100: #405980,
+  //background-secondary-color-200: #233a5c,
+  //background-secondary-color-300: #1a2e4d,
+  //background-secondary-color-400: #132540,
+  //background-secondary-color-500: #0d1a2e,
+  //
+  //background-tetriary-color-100: #a6c1ff,
+  //background-tetriary-color-200: #598bff,
+  //background-tetriary-color-300: #3366ff,
+  //background-tetriary-color-400: #284de0,
+  //background-tetriary-color-500: #2541cc,
+
   text-dark-color: color-black,
   text-disabled-color: color-basic-400,
   text-hint-color: color-basic-600,
@@ -253,13 +280,13 @@ $theme: (
   outline-width: 0.375rem,
   outline-color: color-basic-300,
 
-  scrollbar-color: color-basic-300,
-  scrollbar-background-color: color-basic-100,
+  scrollbar-color: background-primary-color-4,
+  scrollbar-background-color: background-primary-color-2,
   scrollbar-width: 0.3125rem,
 
   /* Components mappings */
 
-  card-background-color: color-white,
+  card-background-color: background-primary-color-1,
   card-text-color: text-dark-color,
   card-text-font-family: text-paragraph-font-family,
   card-text-font-size: text-paragraph-font-size,
@@ -270,7 +297,7 @@ $theme: (
   card-border-color: transparent,
   card-border-radius: 0.75rem,
   card-padding: 1rem 1.25rem,
-  card-divider-color: divider-color,
+  card-divider-color: border-primary-color-2,
   card-divider-style: solid,
   card-divider-width: 1px,
 
@@ -280,7 +307,7 @@ $theme: (
   card-header-text-font-weight: text-subtitle-font-weight,
   card-header-text-line-height: text-subtitle-line-height,
 
-  card-header-disabled-background-color: color-basic-disabled,
+  card-header-disabled-background-color: background-primary-color-3,
   card-header-disabled-text-color: text-disabled-color,
 
   card-header-primary-background-color: color-primary,
@@ -306,7 +333,7 @@ $theme: (
   card-scrollbar-background-color: scrollbar-background-color,
   card-scrollbar-width: scrollbar-width,
 
-  header-background-color: color-basic-100,
+  header-background-color: background-primary-color-1,
   header-text-color: text-dark-color,
   header-text-font-family: text-paragraph-font-family,
   header-text-font-size: text-paragraph-font-size,
@@ -316,7 +343,7 @@ $theme: (
   header-padding: 1.25rem,
   header-shadow: shadow,
 
-  footer-background-color: color-basic-100,
+  footer-background-color: background-primary-color-1,
   footer-text-color: text-dark-color,
   footer-text-font-family: text-paragraph-font-family,
   footer-text-font-size: text-paragraph-font-size,
@@ -325,10 +352,10 @@ $theme: (
   footer-text-highlight-color: color-primary-hover,
   footer-height: 4.725rem,
   footer-padding: 1.25rem,
-  footer-divider-color: divider-color,
+  footer-divider-color: border-primary-color-2,
   footer-shadow: shadow,
 
-  layout-background-color: color-basic-100,
+  layout-background-color: background-primary-color-2,
   layout-text-color: text-dark-color,
   layout-text-font-family: text-paragraph-font-family,
   layout-text-font-size: text-paragraph-font-size,
@@ -338,7 +365,7 @@ $theme: (
   layout-content-width: 900px,
   layout-window-mode-min-width: 300px,
   layout-window-mode-max-width: 1920px,
-  layout-window-mode-background-color: layout-bg,
+  layout-window-mode-background-color: background-primary-color-3,
   layout-window-mode-padding-top: 4.75rem,
   layout-window-shadow: shadow,
   layout-padding: 2.25rem 2.25rem 0.75rem,
@@ -348,7 +375,7 @@ $theme: (
   layout-scrollbar-color: scrollbar-color,
   layout-scrollbar-width: scrollbar-width,
 
-  sidebar-background-color: color-basic-100,
+  sidebar-background-color: background-primary-color-1,
   sidebar-text-color: text-dark-color,
   sidebar-text-font-family: text-paragraph-font-family,
   sidebar-text-font-size: text-paragraph-font-size,
@@ -427,7 +454,7 @@ $theme: (
   tabset-tab-disabled-text-color: text-disabled-color,
   tabset-tab-disabled-underline-color: transparent,
 
-  tabset-divider-color: divider-color,
+  tabset-divider-color: border-primary-color-2,
   tabset-divider-width: 1px,
 
   tabset-content-background-color: transparent,
@@ -474,7 +501,7 @@ $theme: (
   route-tabset-tab-disabled-text-color: text-disabled-color,
   route-tabset-tab-disabled-underline-color: transparent,
 
-  route-tabset-divider-color: divider-color,
+  route-tabset-divider-color: border-primary-color-2,
   route-tabset-divider-width: 1px,
 
   route-tabset-scrollbar-color: scrollbar-color,
@@ -483,7 +510,7 @@ $theme: (
   route-tabset-tab-text-hide-breakpoint: 36rem,
 
   user-picture-box-background-color: transparent,
-  user-picture-box-border-color: color-basic,
+  user-picture-box-border-color: border-primary-color-2,
   user-picture-box-border-width: 0.125rem,
   user-initials-text-color: text-dark-color,
   user-initials-text-font-family: text-paragraph-font-family,
@@ -549,7 +576,7 @@ $theme: (
   popover-text-font-size: text-paragraph-font-size,
   popover-text-font-weight: text-paragraph-font-weight,
   popover-text-line-height: text-paragraph-line-height,
-  popover-background-color: color-white,
+  popover-background-color: background-primary-color-1,
   popover-border-width: 0.125rem,
   popover-border-color: transparent,
   popover-border-radius: 0.5rem,
@@ -567,7 +594,7 @@ $theme: (
   context-menu-arrow-size: 11px,
 
   actions-background-color: transparent,
-  actions-divider-color: divider-color,
+  actions-divider-color: border-primary-color-2,
   actions-divider-style: solid,
   actions-divider-width: 0.0625rem,
   actions-icon-color: text-hint-color,
@@ -637,8 +664,8 @@ $theme: (
   smart-table-paging-bg-active: color-success,
   smart-table-paging-hover: rgba(0, 0, 0, 0.05),
 
-  toastr-background: color-white,
-  toastr-border-color: color-basic,
+  toastr-background: background-primary-color-1,
+  toastr-border-color: border-primary-color-1,
   toastr-border-style: solid,
   toastr-border-width: 0.125rem,
   toastr-border-radius: 0.75rem,
@@ -655,8 +682,8 @@ $theme: (
   toastr-title-text-font-weight: text-subtitle-font-weight,
   toastr-title-text-line-height: text-subtitle-line-height,
 
-  toastr-destroyable-hover-background: color-white,
-  toastr-destroyable-hover-border-color: color-basic-hover,
+  toastr-destroyable-hover-background: background-primary-color-1,
+  toastr-destroyable-hover-border-color: border-primary-color-1,
 
   toastr-primary-background: color-primary,
   toastr-primary-border-color: color-primary,
@@ -980,7 +1007,7 @@ $theme: (
   button-hero-danger-disabled-left-background-color: color-danger-100,
   button-hero-danger-disabled-right-background-color: color-danger-200,
 
-  input-background-color: color-basic-100,
+  input-background-color: background-primary-color-2,
   input-border-style: solid,
   input-border-width: 0.125rem,
   input-placeholder-text-color: text-hint-color,
@@ -988,12 +1015,12 @@ $theme: (
   input-text-color: text-dark-color,
   input-text-font-family: text-subtitle-font-family,
 
-  input-border-color: color-basic-100,
+  input-border-color: border-primary-color-1,
   input-focus-border-color: color-primary-focus,
   input-hover-border-color: color-primary-hover,
 
-  input-disabled-border-color: color-basic-200,
-  input-disabled-background-color: color-basic-200,
+  input-disabled-border-color: border-primary-color-2,
+  input-disabled-background-color: background-primary-color-3,
   input-disabled-text-color: text-disabled-color,
   input-disabled-placeholder-text-color: text-disabled-color,
 
@@ -1074,8 +1101,8 @@ $theme: (
   checkbox-text-font-weight: text-subtitle-2-font-weight,
   checkbox-text-line-height: text-subtitle-2-line-height,
 
-  checkbox-disabled-background-color: color-basic-400,
-  checkbox-disabled-border-color: color-basic-400,
+  checkbox-disabled-background-color: background-primary-color-4,
+  checkbox-disabled-border-color: border-primary-color-4,
   checkbox-disabled-checkmark-color: color-white,
   checkbox-disabled-text-color: text-disabled-color,
 
@@ -1209,7 +1236,7 @@ $theme: (
   progress-bar-giant-text-font-weight: text-subtitle-font-weight,
   progress-bar-giant-text-line-height: text-subtitle-line-height,
 
-  progress-bar-primary-background-color: color-basic-200,
+  progress-bar-primary-background-color: background-primary-color-3,
   progress-bar-primary-filled-background-color: color-primary,
   progress-bar-primary-text-color: text-light-color,
   progress-bar-success-background-color: color-basic-200,
@@ -1225,7 +1252,7 @@ $theme: (
   progress-bar-danger-filled-background-color: color-danger,
   progress-bar-danger-text-color: text-light-color,
 
-  alert-background-color: color-basic-100,
+  alert-background-color: background-primary-color-2,
   alert-border-radius: 0.5rem,
   alert-bottom-margin: 1.5rem,
   alert-padding: 1rem 1.125rem,
@@ -1271,7 +1298,7 @@ $theme: (
   alert-outline-warning-color: color-warning,
   alert-outline-danger-color: color-danger,
 
-  chat-background-color: color-white,
+  chat-background-color: background-primary-color-1,
   chat-border: none,
   chat-border-radius: radius,
   chat-shadow: none,
@@ -1309,17 +1336,17 @@ $theme: (
   chat-danger-background-color: color-danger,
   chat-danger-text-color: text-light-color,
 
-  chat-divider-color: divider-color,
+  chat-divider-color: border-primary-color-2,
   chat-divider-style: solid,
   chat-divider-width: 0.0625rem,
 
   chat-message-background: linear-gradient(to right, #4ca6ff, #59bfff),
   chat-message-text-color: color-white,
-  chat-message-reply-background-color: color-bg-active,
+  chat-message-reply-background-color: background-primary-color-4,
   chat-message-reply-text-color: color-fg-text,
   chat-message-avatar-background-color: color-basic,
   chat-message-sender-text-color: text-hint-color,
-  chat-message-quote-background-color: color-bg-active,
+  chat-message-quote-background-color: background-primary-color-4,
   chat-message-quote-text-color: color-fg,
   chat-message-file-text-color: color-fg,
   chat-message-file-background-color: transparent,
@@ -1360,7 +1387,7 @@ $theme: (
   stepper-step-active-text-color: text-primary-active-color,
   stepper-step-completed-text-color: color-primary,
 
-  stepper-step-index-border-color: color-basic-600,
+  stepper-step-index-border-color: border-primary-color-3,
   stepper-step-index-border-style: solid,
   stepper-step-index-border-width: 0.125rem,
   stepper-step-index-border-radius: 50%,
@@ -1370,7 +1397,7 @@ $theme: (
   stepper-step-index-completed-border-color: color-primary,
   stepper-step-index-completed-text-color: text-light-color,
 
-  stepper-connector-background-color: color-basic-600,
+  stepper-connector-background-color: background-primary-color-4,
   stepper-connector-completed-background-color: color-primary,
   stepper-horizontal-connector-margin: 1rem,
   stepper-vertical-connector-margin: 1rem,
@@ -1386,17 +1413,17 @@ $theme: (
   accordion-header-text-font-weight: text-subtitle-font-weight,
   accordion-header-text-line-height: text-subtitle-line-height,
   accordion-header-disabled-text-color: text-disabled-color,
-  accordion-header-border-color: divider-color,
+  accordion-header-border-color: border-primary-color-2,
   accordion-header-border-style: solid,
   accordion-header-border-width: 1px,
-  accordion-item-background-color: color-white,
+  accordion-item-background-color: background-primary-color-1,
   accordion-item-text-color: text-dark-color,
   accordion-item-text-font-family: text-paragraph-font-weight,
   accordion-item-text-font-size: text-paragraph-font-family,
   accordion-item-text-font-weight: text-paragraph-font-size,
   accordion-item-text-line-height: text-paragraph-line-height,
 
-  list-item-border-color: divider-color,
+  list-item-border-color: border-primary-color-2,
   list-item-padding: 1rem,
 
   calendar-width: 21.875rem,
@@ -1421,7 +1448,7 @@ $theme: (
 
   calendar-cell-inactive-text-color: text-disabled-color,
   calendar-cell-in-range-background-color: color-primary-200,
-  calendar-cell-disabled-background-color: color-basic-disabled,
+  calendar-cell-disabled-background-color: background-primary-color-3,
   calendar-cell-disabled-text-color: text-disabled-color,
   calendar-cell-selected-background-color: color-primary,
   calendar-cell-selected-text-color: text-light-color,
@@ -1438,7 +1465,7 @@ $theme: (
   calendar-cell-active-text-font-size: text-subtitle-font-size,
   calendar-cell-active-text-font-weight: text-subtitle-font-weight,
   calendar-cell-active-text-line-height: text-subtitle-line-height,
-  calendar-cell-today-background-color: color-basic,
+  calendar-cell-today-background-color: background-primary-color-3,
   calendar-cell-today-text-color: text-dark-color,
   calendar-cell-today-text-font-size: text-subtitle-font-size,
   calendar-cell-today-text-font-weight: text-subtitle-font-weight,
@@ -1506,15 +1533,15 @@ $theme: (
   select-text-font-weight: text-subtitle-font-weight,
   select-placeholder-text-font-weight: text-paragraph-font-weight,
 
-  select-option-background-color: color-white,
+  select-option-background-color: background-primary-color-1,
   select-option-text-color: text-dark-color,
-  select-option-selected-background-color: color-white,
+  select-option-selected-background-color: background-primary-color-1,
   select-option-selected-text-color: text-primary-color,
-  select-option-focus-background-color: color-white,
+  select-option-focus-background-color: background-primary-color-1,
   select-option-focus-text-color: text-primary-focus-color,
-  select-option-hover-background-color: color-white,
+  select-option-hover-background-color: background-primary-color-1,
   select-option-hover-text-color: text-primary-hover-color,
-  select-option-disabled-background-color: color-white,
+  select-option-disabled-background-color: background-primary-color-1,
   select-option-disabled-text-color: text-disabled-color,
 
   select-tiny-text-font-size: text-button-tiny-font-size,
@@ -1532,8 +1559,8 @@ $theme: (
   select-semi-round-border-radius: 0.75rem,
   select-round-border-radius: 1.5rem,
 
-  select-outline-background-color: color-basic-100,
-  select-outline-border-color: color-basic-100,
+  select-outline-background-color: background-primary-color-2,
+  select-outline-border-color: border-primary-color-2,
   select-outline-border-style: solid,
   select-outline-border-width: 0.125rem,
   select-outline-text-color: text-dark-color,
@@ -1541,8 +1568,8 @@ $theme: (
 
   select-outline-focus-border-color: color-primary-focus,
   select-outline-hover-border-color: color-primary-hover,
-  select-outline-disabled-border-color: color-basic-disabled,
-  select-outline-disabled-background-color: color-basic-disabled,
+  select-outline-disabled-border-color: border-primary-color-2,
+  select-outline-disabled-background-color: background-primary-color-3,
   select-outline-disabled-text-color: text-disabled-color,
 
   select-outline-tiny-padding: 0.25rem 0.625rem,
@@ -1583,8 +1610,8 @@ $theme: (
   select-group-option-outline-large-start-padding: 2.25rem,
   select-group-option-outline-giant-start-padding: 2.75rem,
 
-  select-filled-background-color: color-basic-100,
-  select-filled-border-color: color-basic-100,
+  select-filled-background-color: background-primary-color-2,
+  select-filled-border-color: background-primary-color-2,
   select-filled-border-style: solid,
   select-filled-border-width: 0.125rem,
   select-filled-text-color: text-dark-color,
@@ -1593,8 +1620,8 @@ $theme: (
   select-filled-focus-border-color: color-basic-focus,
   select-filled-hover-background-color: color-basic-hover,
   select-filled-hover-border-color: color-basic-hover,
-  select-filled-disabled-background-color: color-basic-disabled,
-  select-filled-disabled-border-color: color-basic-disabled,
+  select-filled-disabled-background-color: background-primary-color-2,
+  select-filled-disabled-border-color: background-primary-color-2,
   select-filled-disabled-text-color: text-disabled-color,
 
   select-filled-tiny-padding: 0.25rem 0.625rem,
@@ -1773,7 +1800,7 @@ $theme: (
   select-group-option-hero-giant-padding-start: 2.75rem,
 
   datepicker-text-color: text-dark-color,
-  datepicker-background-color: color-white,
+  datepicker-background-color: background-primary-color-1,
   datepicker-border-color: color-primary,
   datepicker-border-radius: 0.75rem,
   datepicker-shadow: none,
@@ -1792,9 +1819,9 @@ $theme: (
   radio-outline-color: outline-color,
   radio-outline-width: outline-width,
 
-  radio-disabled-border-color: color-basic,
+  radio-disabled-border-color: border-primary-color-4,
   radio-disabled-text-color: text-disabled-color,
-  radio-disabled-inner-circle-color: color-basic,
+  radio-disabled-inner-circle-color: border-primary-color-4,
 
   radio-primary-border-color: color-primary,
   radio-primary-inner-circle-color: color-primary,
@@ -1843,34 +1870,34 @@ $theme: (
 
   tree-grid-cell-border-width: 0.0625rem,
   tree-grid-cell-border-style: solid,
-  tree-grid-cell-border-color: divider-color,
+  tree-grid-cell-border-color: border-primary-color-2,
   tree-grid-row-min-height: 2rem,
   tree-grid-cell-padding: 0.875rem 1.25rem,
 
-  tree-grid-header-background: color-white,
+  tree-grid-header-background-color: background-primary-color-1,
   tree-grid-header-text-color: text-dark-color,
   tree-grid-header-text-font-family: text-subtitle-font-family,
   tree-grid-header-text-font-size: text-subtitle-font-size,
   tree-grid-header-text-font-weight: text-subtitle-font-weight,
   tree-grid-header-text-line-height: text-subtitle-line-height,
 
-  tree-grid-footer-background: tree-grid-header-background,
+  tree-grid-footer-background-color: background-primary-color-1,
   tree-grid-footer-text-color: text-dark-color,
   tree-grid-footer-text-font-family: tree-grid-header-text-font-family,
   tree-grid-footer-text-font-size: tree-grid-header-text-font-size,
   tree-grid-footer-text-font-weight: tree-grid-header-text-font-weight,
   tree-grid-footer-text-line-height: tree-grid-header-text-line-height,
 
-  tree-grid-row-background: color-white,
-  tree-grid-row-even-background: color-white,
-  tree-grid-row-hover-background: color-white,
+  tree-grid-row-background-color: background-primary-color-1,
+  tree-grid-row-even-background-color: background-primary-color-1,
+  tree-grid-row-hover-background-color: background-primary-color-1,
   tree-grid-row-text-color: text-dark-color,
   tree-grid-row-text-font-family: text-paragraph-font-family,
   tree-grid-row-text-font-size: text-paragraph-font-size,
   tree-grid-row-text-font-weight: text-paragraph-font-weight,
   tree-grid-row-text-line-height: text-paragraph-line-height,
 
-  tree-grid-sort-header-button-background: transparent,
+  tree-grid-sort-header-button-background-color: transparent,
   tree-grid-sort-header-button-border: none,
   tree-grid-sort-header-button-padding: 0,
 
